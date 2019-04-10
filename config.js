@@ -9,5 +9,6 @@ module.exports = {
   USERNAME_STUDENT: process.env.USERNAME_STUDENT || '01016101',
   USERNAME_TEACHER: process.env.USERNAME_TEACHER || '01016101',
   CLASS_ID: process.env.CLASS_ID || 'SKIVS:1MBA',
-  SEARCH_PHRASE: process.env.SEARCH_PHRASE || 'https://buddy.service.no'
+  SEARCH_PHRASE: process.env.SEARCH_PHRASE || 'https://buddy.service.no',
+  DATA_DIRECTORY_PATH: process.env.DATA_DIRECTORY_PATH || 'data'
 }

@@ -18,6 +18,7 @@ USERNAME_STUDENT=student-username #Needed for student tests
 USERNAME_TEACHER=teacher-username #Needed for teacher tests
 CLASS_ID=class-id #Needed for class tests
 SEARCH_PHRASE=query #Needed for search tests
+DATA_DIRECTORY_PATH=data-directory-path #Defaults to data
 ```
 
 # Usage
@@ -56,6 +57,12 @@ Check teachers user via AD
 
 ```
 $ node tools/check-user-ad.js
+```
+
+Check teachers connection to contact class
+
+```
+$ node tools/check-system.js
 ```
 
 # License
