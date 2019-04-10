@@ -15,7 +15,7 @@
     "csvtojson": "2.0.8",
     "dotenv": "6.0.0",
     "jsonwebtoken": "8.3.0",
-    "simple-encryptor": "1.4.0"
+    "simple-encryptor": "2.0.0"
   },
   "devDependencies": {
     "ava": "1.4.1",
