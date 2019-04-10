@@ -5,6 +5,7 @@
   const { BUDDY_SERVICE_URL } = require('../config')
   let teachers = await getAllTeachers()
   let errors = []
+  let counter = 0
   console.log(`Got ${teachers.length} teachers`)
 
   const next = async () => {
@@ -19,6 +20,7 @@
       const contactClasses = await lookupBuddy(contactClassesQuery)
       console.log(`Got ${contactClasses.length} classes`)
       if (contactClasses.length > 0) {
+        counter++
         const selectedClass = randomEntry(contactClasses)['Id']
         console.log(`Retrieve students for ${selectedClass}`)
         const studentsUrl = `${BUDDY_SERVICE_URL}/classes/${selectedClass}/students`
@@ -53,6 +55,7 @@
       await next()
     } else {
       console.log(`Finished checking`)
+      console.log(`Checked ${counter} contact teachers`)
       console.log(`Got ${errors.length} ERRORS`)
       console.log(errors.join('\n'))
     }
