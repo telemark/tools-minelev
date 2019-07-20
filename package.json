@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "standard && ava && npm audit",
-    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
+    "standard-fix": "standard --fix"
   },
   "keywords": [],
   "author": "",

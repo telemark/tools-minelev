@@ -3,8 +3,8 @@
   const lookupBuddy = require('../lib/lookup-buddy')
   const randomEntry = require('../lib/random-entry')
   const { BUDDY_SERVICE_URL } = require('../config')
-  let teachers = await getAllTeachers()
-  let errors = []
+  const teachers = await getAllTeachers()
+  const errors = []
   let counter = 0
   console.log(`Got ${teachers.length} teachers`)
 
