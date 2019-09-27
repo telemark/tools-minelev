@@ -21,7 +21,7 @@
       console.log(`Got ${contactClasses.length} classes`)
       if (contactClasses.length > 0) {
         counter++
-        const selectedClass = randomEntry(contactClasses)['Id']
+        const selectedClass = randomEntry(contactClasses).Id
         console.log(`Retrieve students for ${selectedClass}`)
         const studentsUrl = `${BUDDY_SERVICE_URL}/classes/${selectedClass}/students`
         const studentsQuery = {
@@ -31,7 +31,7 @@
         const students = await lookupBuddy(studentsQuery)
         console.log(`Got ${students.length} students`)
         if (students.length > 0) {
-          const student = randomEntry(students)['userName']
+          const student = randomEntry(students).userName
           console.log(`Checking connection ${teacher} - ${student}`)
           const url = `${BUDDY_SERVICE_URL}/students/${student}`
           const query = {
@@ -54,7 +54,7 @@
       }
       await next()
     } else {
-      console.log(`Finished checking`)
+      console.log('Finished checking')
       console.log(`Checked ${counter} contact teachers`)
       console.log(`Got ${errors.length} ERRORS`)
       console.log(errors.join('\n'))
