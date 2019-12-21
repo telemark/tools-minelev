@@ -67,3 +67,7 @@ typings/
 
 # next.js build output
 .next
+
+# Local
+teachers.csv
+all-students.json

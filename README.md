@@ -14,11 +14,16 @@ LDAP_JWT_SECRET=your-secret #Needed for LDAP tests
 LDAP_LOOKUP_URL=ldap-service-url #Needed for LDAP tests
 BUDDY_SERVICE_URL=buddy-service-url #Needed for most tests
 BUDDY_JWT_SECRET=buddy-service-secret #Needed for most tests
+TJOMMI_SERVICE_URL=tjommi-service-url
+TJOMMI_SERVICE_SECRET=tjommi-service-secret
 USERNAME_STUDENT=student-username #Needed for student tests
 USERNAME_TEACHER=teacher-username #Needed for teacher tests
 CLASS_ID=class-id #Needed for class tests
 SEARCH_PHRASE=query #Needed for search tests
 DATA_DIRECTORY_PATH=data-directory-path #Defaults to data
+MONGODB_CONNECTION=mongodb-connection-string
+MONGODB_COLLECTION_TJOMMI=mongodb-collection-tjommi
+MONGODB_NAME=mongodb-db-name
 ```
 
 # Usage
@@ -63,6 +68,12 @@ Check teachers connection to contact class
 
 ```
 $ node tools/check-system.js
+```
+
+## Reports
+
+```
+$ npm run report:students:getall
 ```
 
 # License
