@@ -12,8 +12,9 @@
   try {
     const students = await tjommi.find(query).toArray()
     logger('info', ['reports', 'students-get-all', 'got', students.length, 'students'])
-    const data = students.map(student => Object.assign({ username: student.username, mainGroupName: student.mainGroupName }))
+    const data = students.map(student => Object.assign({ name: student.fullName, username: student.username, mainGroupName: student.mainGroupName }))
     await writeFile('data/all-students.json', JSON.stringify(data, null, 2), 'utf-8')
+    await writeFile('data/all-students-copy.json', JSON.stringify(data, null, 2), 'utf-8')
     logger('info', ['reports', 'students-get-all', 'finished'])
   } catch (error) {
     logger('error', ['reports', 'students-get-all', error])

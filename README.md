@@ -72,8 +72,16 @@ $ node tools/check-system.js
 
 ## Reports
 
+Save all students to data/all-students.json.
+
 ```
 $ npm run report:students:getall
+```
+
+Find all student missing contact teachers. (Requires `report:students:getall` to be run first)
+
+```
+$ npm run report:students:missingcontactteacher
 ```
 
 # License

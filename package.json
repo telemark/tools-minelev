@@ -8,7 +8,8 @@
     "test": "standard && ava && npm audit",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
     "standard-fix": "standard --fix",
-    "report:students:getall": "node reports/students-get-all.js"
+    "report:students:getall": "node reports/students-get-all.js",
+    "report:students:missingcontactteacher": "node reports/students-get-missing-contactteacher.js"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,8 @@
     "dotenv": "8.2.0",
     "jsonwebtoken": "8.5.1",
     "mongodb": "3.4.1",
-    "simple-encryptor": "3.0.0"
+    "simple-encryptor": "3.0.0",
+    "then-sleep": "1.0.1"
   },
   "devDependencies": {
     "ava": "2.4.0",
