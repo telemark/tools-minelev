@@ -23,6 +23,7 @@
   }
   while (students.length > 0) {
     await sleep(1000)
+    logger('info', ['reports', 'students-get-missing-contactteacher', students.length, 'students to go'])
     const student = students.pop()
     const contactteachers = await getContactTeachers(student.username)
     if (contactteachers.length === 0) {
