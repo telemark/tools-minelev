@@ -8,7 +8,7 @@
   let missing = []
   logger('info', ['reports', 'students-get-missing-contactteacher', 'start'])
   try {
-    const requiredStudents = require('../data/all-students.copy.json')
+    const requiredStudents = require('../data/all-students-copy.json')
     students = requiredStudents
     logger('info', ['reports', 'students-get-missing-contactteacher', 'got required students'])
   } catch (error) {
