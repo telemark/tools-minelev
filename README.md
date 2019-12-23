@@ -84,6 +84,12 @@ Find all student missing contact teachers. (Requires `report:students:getall` to
 $ npm run report:students:missingcontactteacher
 ```
 
+Stats from the `report:students:missingcontactteacher` report
+
+```
+$ npm run stats:students:missingcontactteacher
+```
+
 # License
 
 [MIT](License)

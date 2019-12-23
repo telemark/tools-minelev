@@ -9,7 +9,8 @@
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
     "standard-fix": "standard --fix",
     "report:students:getall": "node reports/students-get-all.js",
-    "report:students:missingcontactteacher": "node reports/students-get-missing-contactteacher.js"
+    "report:students:missingcontactteacher": "node reports/students-get-missing-contactteacher.js",
+    "stats:students:missingcontactteacher": "node reports/students-missing-contactteacher-stats.js"
   },
   "keywords": [],
   "author": "",
