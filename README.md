@@ -90,6 +90,12 @@ Stats from the `report:students:missingcontactteacher` report
 $ npm run stats:students:missingcontactteacher
 ```
 
+Convert the `report:students:missingcontactteacher` report to csv
+
+```
+$ npm run convert:students:missingcontactteacher
+```
+
 # License
 
 [MIT](License)
