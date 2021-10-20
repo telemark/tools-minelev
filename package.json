@@ -22,7 +22,7 @@
     "dotenv": "8.2.0",
     "json2csv": "4.5.4",
     "jsonwebtoken": "8.5.1",
-    "mongodb": "3.4.1",
+    "mongodb": "3.7.3",
     "simple-encryptor": "3.0.0",
     "then-sleep": "1.0.1"
   },
