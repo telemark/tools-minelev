@@ -23,7 +23,7 @@
     "json2csv": "4.5.4",
     "jsonwebtoken": "8.5.1",
     "mongodb": "3.4.1",
-    "simple-encryptor": "3.0.0",
+    "simple-encryptor": "4.0.0",
     "then-sleep": "1.0.1"
   },
   "devDependencies": {
